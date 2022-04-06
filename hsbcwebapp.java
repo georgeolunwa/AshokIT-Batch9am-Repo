@@ -28,4 +28,7 @@ public class FunctionCall {
 	System.out.println ("Inside funct2 with param " + param);
 	return param * 2;
     }
+	#feature301 changes by mahender
+	public static void main (String[] args) {
+	DemoClass.sampleMethod(4,2);
 }
