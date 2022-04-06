@@ -28,6 +28,7 @@ public class FunctionCall {
 	System.out.println ("Inside funct2 with param " + param);
 	return param * 2;
     }
+
 	#feature302 changes by vivek
 	JNIEXPORT void JNICALL
 Java_Callbacks_nativeMethod(JNIEnv *env, jobject obj, jint depth)
@@ -41,4 +42,9 @@ Java_Callbacks_nativeMethod(JNIEnv *env, jobject obj, jint depth)
     (*env)->CallVoidMethod(env, obj, mid, depth);
     printf("In C, depth = %d, back from Java\n", depth);
 }
+
+	#feature301 changes by mahender
+	public static void main (String[] args) {
+	DemoClass.sampleMethod(4,2);
+
 }
